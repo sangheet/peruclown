@@ -1,53 +1,8 @@
-/*
 
-Template Name: SKRN Progression
-Template URI: http://progression-studios.com/skrn/
-Author: Progression Studios
-Author URI: https://progressionstudios.com/
-Description: Media Streaming App Site Template
-Version: 1.1
-License: GNU General Public License version 3.0
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-
-*/
-
-
-/*  Table of Contents
-01. FONT STYLES
-02. BUTTON STYLES
-03. HIGHLIGHT COLORS
-04. MAIN CONTAINERS
-05. HEADER STYLES
-06. NAVIGATION STYLES
-07. DASHBOARD MAIN STYLES
-08. DASHBOARD NAVIGATION STYLES
-09. DASHBOARD HEADER USER & NOTIFICATION STYLES
-10. DASHBOARD HEADER SEARCH STYLES
-11. DASHBOARD SLIDER STYLES
-12. DASHBOARD CONTENT SIDEBAR PAGES
-13. DASHBOARD ACCOUNT PAGES
-14. HEADINGS & PAGE TITLE STYLES
-15. DEFAULT PAGE STYLES
-16. LOGIN/REGISTRATION STYLES
-17. INPUT/TEXTAREA STYLES
-18. FOOTER STYLES
-19. HOMEPAGE STYLES
-20. FLEXSLIDER DEFAULT STYLES
-21. MOBILE NAVIGATION
-22. SOCIAL ICONS
-23. CSS3 ANIMATIONS
-24. RESPONSIVE STYLES
-
-*/
-
-
-/*
-=============================================== 01. FONT STYLES ===============================================
-*/
-body, input, textarea, select { 
+body, textarea, select { 
 	font-family: 'Lato', sans-serif;
 	line-height: 1.8; 
-	color:#555555;
+	color:#c9c9c9;
 	font-size:15px;
 	background: #6441A5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
@@ -510,7 +465,7 @@ nav#sidebar-nav {
 
 #video-logo-background a {
 	display:block;
-	height:90px; /* Height of Height Should Match Below */
+	height:90px; 
 	line-height:90px;
 	text-align:center;
 	width:160px;
@@ -549,7 +504,7 @@ nav#sidebar-nav {
 	position:relative;
 	top:-2px;
 	left:2px;
-	width:95px;
+	width:160px;
 	text-align:center;
 	margin:0px 0px 0px 0px;
 	
@@ -2264,7 +2219,7 @@ ul.dashboard-sub-menu li a:after {
 
 ul.dashboard-sub-menu li a:hover,
 ul.dashboard-sub-menu li.current a {
-	color:#333333;
+	color:#ffffff;
 }
 
 #account-edit-photo {
