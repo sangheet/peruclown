@@ -1,12 +1,14 @@
 
+
+
 body, textarea, select { 
 	font-family: 'Lato', sans-serif;
 	line-height: 1.8; 
-	color:#c9c9c9;
+	color:#570d53;
 	font-size:15px;
 	background: #6441A5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #fcfcfc, #eee2ec);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fcfcfc, #eee2ec); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -26,7 +28,7 @@ p.small-paragraph-spacing {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
-	color:#f7f7f7;
+	color:#fc024e;
 	margin-bottom: 0.6rem;
 }
 
@@ -454,9 +456,10 @@ header#videohead-pro {
 	position:relative;
 	margin:0px;
 	padding:0px;
-	z-index:110;
-	background: #383838;
-	border-bottom:1px solid rgba(0,0,0,0.08);
+	z-index:-10;
+	/*background: #383838;*/
+
+	
 }
 
 nav#sidebar-nav {
@@ -562,6 +565,7 @@ main#col-main {
 	width:300px;
 	float:left;
 	background:#fafafa;
+	margin-top: -90px;
 }
 
 #content-sidebar-pro:after {
@@ -626,6 +630,12 @@ ul.dashboard-genres-pro li h6 {
 	box-shadow:0px 3px 8px rgba(0,0,0,  0.06);
 	margin-bottom:30px;
 	background: aliceblue;
+	transition: all 1s; 
+	transition-delay: .5s;
+}
+.item-listing-container-skrn:hover {
+	transform: scale(1.2);
+	transition: all .5s; 
 }
 
 .item-listing-container-skrn img {
@@ -1408,6 +1418,7 @@ span.user-notification-count {
 .flexslider.progression-studios-dashboard-slider {
 	background:#fafafa;
 	height:85vh;
+	margin-top: -90px;
 }
 
 .progression-studios-slider-dashboard-image-background {
@@ -1527,6 +1538,7 @@ ul.progression-studios-slider-meta li:last-child:after {
 p.progression-studios-slider-description {
 	font-size:14px;
 	margin-bottom:25px;
+	color: white;
 }
 
 
@@ -1932,6 +1944,7 @@ ul#sidebar-reviews-pro .sidebar-review-time {
 	background-repeat: no-repeat;
 	background-position:center center;
 	background-size: cover;
+	margin-top: -90px;
 }
 
 #movie-detail-gradient-pro {
@@ -4111,10 +4124,12 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	/* Responsive Sidebar Size */
 	#content-sidebar-pro {
 		width:260px;
+		
 	}
 
 	#content-sidebar-pro:after {
 		width:260px;
+		
 	}
 
 	main#col-main-with-sidebar {
@@ -4166,6 +4181,7 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	#content-sidebar-pro {
 		margin-left:0px;
 		width:260px;
+		
 	}
 	
 	#content-sidebar-pro:after {

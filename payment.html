@@ -28,11 +28,11 @@
 				
 				
 				<div id="header-user-profile">
-					<div id="header-user-profile-click" class="noselect">
+					<!-- <div id="header-user-profile-click" class="noselect">
 						<img src="images/demo/user-profile.jpg" alt="Suzie">
 						<div id="header-username">Mi cuenta</div>
 						
-					</div>
+					</div> -->
 					<!-- close #header-user-profile-click -->
 					<div id="header-user-profile-menu">
 						<ul>
@@ -189,6 +189,9 @@
 							<h5>Detalles de plan:</h5>
 							<ul>
 								<li>Acceso Total a todos los contenidos</li>
+								<li>Acceso Total a todos los contenidos</li>
+								<li>Acceso Total a todos los contenidos</li>
+								<li>Acceso Total a todos los contenidos</li>
 								
 							</ul>
 						</div><!-- close .col-sm -->
@@ -206,25 +209,71 @@
 				</div><!-- close .current-plan-account -->
 				
 				<hr>
-				<h5>Método de pago</h5>
+				<h5>Realiza tu pago</h5>
 				<div class="row payment-method-container">
-					<div class="col-md">
+					<div class="col-md-6">
 						<div class="right-border-payment">
 						<p class="small-paragraph-spacing"><img src="images/demo/credit-card.png" alt="Credit Card"></p>
-						<p class="small-paragraph-spacing"><a href="#!" class="btn">Editar esta tarjeta</a></p>
-						<p><a href="#!" class="btn"><i class="fas fa-plus"></i> Agregar método de pago</a></p>
+						<!-- <p class="small-paragraph-spacing"><a href="#!" class="btn">Editar esta tarjeta</a></p>
+						<p><a href="#!" class="btn"><i class="fas fa-plus"></i> Agregar método de pago</a></p> -->
 						</div>
-					</div><!-- close .col -->
-					<div class="col-md">
+					</div>
+					<!-- <div class="col-md">
 						<h6>Invita a un amigo</h6>
 						<p>Recibe 10% de descuento en tu plan.</p>
 						<p><a href="#!" class="btn btn-green-pro">Referrir un amigo</a></p>
-					</div><!-- close .col -->
+					</div> -->
+					<form class="account-settings-form">
+						
+						<h5>Datos de tarjeta</h5>
+						<p class="small-paragraph-spacing">Maneja tu cuenta personal en Perú Clown.</p>
+						<div class="row">
+							<div class="col-sm">
+								  <div class="form-group">
+									<label for="first-name" class="col-form-label">Número de tarjeta:</label>
+									  <input type="text" class="form-control" id="cardnumber" placeholder="indica número de tarjeta" value="">
+								  </div>
+							</div><!-- close .col -->
+							<div class="col-sm">
+								<div class="form-group">
+								  <label for="first-name" class="col-form-label">Nombre titular:</label>
+									<input type="text" class="form-control" id="name" placeholder="El nombre que aparece en tu tarjeta" value="">
+								</div>
+						  </div>
+						  <div class="col-sm">
+							<div class="form-group">
+							  <label for="first-name" class="col-form-label">Código de tarjeta:</label>
+								<input type="text" class="form-control" id="cardcod" placeholder="" value="">
+							</div>
+					  </div><!-- close .col -->
+							
+							
+						</div><!-- close .row -->
+						<hr>
+					
+						<h5>Información de cuenta</h5>
+						<p class="small-paragraph-spacing">El correo con el que ingresas a tu cuenta Perú Clown.</p>
+						
+						<div class="row">
+							<div class="col-sm">
+								  <div class="form-group">
+									<label for="e-mail" class="col-form-label">E-mail</label>
+									  <input type="text" class="form-control" id="e-mail" placeholder=" ej. peruclown@outlook.com">
+								  </div>
+							</div><!-- close .col -->
+							
+							
+						</div><!-- close .row -->
+						<div class="clearfix"></div>
+						<hr>
+						<p><a href="dashboard-account.html" class="btn btn-green-pro">Realizar compra</a></p>
+						<br>
+						</form>
 				</div><!-- close .row -->
 				
 				<hr>
 				
-				<p><a href="#!" class="btn">Cancelar membresía</a></p>
+				
 				<br>
 				
 			</div><!-- close .dashboard-container -->
