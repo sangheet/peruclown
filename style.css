@@ -139,7 +139,7 @@ ul.registration-invite-friends-list li:hover,
 .form-group input:focus, .form-group textarea:focus,
 .jumbotron-pro.jumbotron-selected, .registration-billing-form .jumbotron-pro:hover,
 ul#registration-steps-pro li:hover, ul#registration-steps-pro li.current-menu-item {
-	border-color:#fc024e;
+	/*border-color:#fc024e;*/
 }
 
 ul#registration-steps-pro li.current-menu-item .registration-step-circle-icon:before {
@@ -471,14 +471,14 @@ nav#sidebar-nav {
 	height:90px; 
 	line-height:90px;
 	text-align:center;
-	width:160px;
+	width:100px;
 }
 
 #video-logo-background:after {
 	content:"";
 	display:block;
 	position:absolute;
-	left:160px;
+	left:100px;
 	top:0px;
 	z-index:-1;
 	width:10px;
@@ -497,7 +497,7 @@ nav#sidebar-nav {
 	content:"";
 	display:block;
 	position:absolute;
-	left:160px;
+	left:100px;
 	width:1px;
 	background:rgba(0, 0, 0, 0.04);
 	height:100%;
@@ -507,20 +507,21 @@ nav#sidebar-nav {
 	position:relative;
 	top:-2px;
 	left:2px;
-	width:160px;
+	width:100px;
 	text-align:center;
 	margin:0px 0px 0px 0px;
 	
 }
 nav#sidebar-nav {
-	position:fixed;
-	top:0;
-	left:0;
-	width:160px;	/* Sidebar Width */
-	z-index:25;
-	background: #6441A5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    z-index: 25;
+    background: #009BB5;
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+    background: linear-gradient(to right, #009BB5, #009BB5);
+}
 
 }
 nav#sidebar-nav.sticky-sidebar-js {
@@ -528,7 +529,7 @@ nav#sidebar-nav.sticky-sidebar-js {
 }
 
 #sidebar-bg:before {
-	background-color: #1d1d1d;
+	background-color: #009BB5;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
 	content: "";
 	display: block;
@@ -537,7 +538,7 @@ nav#sidebar-nav.sticky-sidebar-js {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 160px;	/* Sidebar Width */
+	width: 100px;	/* Sidebar Width */
 	z-index:1; /* Fixes flashing bug with scrolling on Safari */
 }
 
@@ -553,7 +554,7 @@ nav#sidebar-nav.sticky-sidebar-js {
 }
 
 main#col-main {
-	margin-left:160px;	/* Sidebar Width */
+	margin-left:100px;	/* Sidebar Width */
 }
 
 .dashboard-container {
@@ -561,7 +562,7 @@ main#col-main {
 }
 
 #content-sidebar-pro {
-	margin-left:160px;
+	margin-left:100px;
 	width:300px;
 	float:left;
 	background:#fafafa;
@@ -571,7 +572,7 @@ main#col-main {
 #content-sidebar-pro:after {
 	content:'';
 	position:fixed;
-	left:160px;
+	left:100px;
 	width:300px;
 	top:0px;
 	height:100%;
@@ -582,7 +583,7 @@ main#col-main {
 }
 
 main#col-main-with-sidebar {
-	margin-left:460px;
+	margin-left:400px;
 }
 
 /* DASHBOARD GENRES  */
@@ -634,7 +635,7 @@ ul.dashboard-genres-pro li h6 {
 	transition-delay: .5s;
 }
 .item-listing-container-skrn:hover {
-	transform: scale(1.2);
+	transform: scale(1.1,1.05);
 	transition: all .5s; 
 }
 
@@ -802,15 +803,16 @@ ul#vertical-sidebar-nav.sf-menu li {
 
 ul#vertical-sidebar-nav.sf-menu li a {
 	display:block;
-	font-size:12px;
-	color:#848484;
+	font-size:10px;
+	color:#000;
 	padding:26px 0px;
 	border-bottom:1px solid #e7e7e7;
 }
 
 
 ul#vertical-sidebar-nav.sf-menu a:hover, ul#vertical-sidebar-nav.sf-menu li.sfHover a, ul#vertical-sidebar-nav.sf-menu li.current-menu-item a {
-	color:#fc024e;
+	color:#000;
+	font-size: 10px;
 }
 
 /* Sub-menu Styles */
@@ -4105,7 +4107,7 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	}
 	
 	.dashboard-container {
-		padding:0px 40px;
+		padding:0px 50px;
 	}
 	
 	/* Responsive Dashboard Slider Styles */
@@ -4511,8 +4513,7 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	
 	
 	ul.dashboard-genres-pro {
-		padding-right:0px;
-		padding-left:0px;
+		
 	}
 	
 	ul.dashboard-genres-pro li {
@@ -4652,8 +4653,103 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	}
 
 
-	
+	.scale-in-tl {
+		-webkit-animation: scale-in-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+				animation: scale-in-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	}
 	
 }
+.fade-in-left {
+	-webkit-animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.fade-in-top {
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.fade-in-top2 {
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+			animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+			animation-delay: 0.8s;
+}
+.fade-in-right {
+	-webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
 
+ @-webkit-keyframes fade-in-left {
+	0% {
+	  -webkit-transform: translateX(-20%);
+			  transform: translateX(-20%);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+ 
 
+@-webkit-keyframes fade-in-right {
+	0% {
+	  -webkit-transform: translateX(50px);
+			  transform: translateX(50px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  @keyframes fade-in-right {
+	0% {
+	  -webkit-transform: translateX(50px);
+			  transform: translateX(50px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  
+/* ----------------------------------------------
+ * Generated by Animista on 2020-6-19 18:33:32
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in-top {
+	0% {
+	  -webkit-transform: translateY(-50px);
+			  transform: translateY(-50px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateY(0);
+			  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  @keyframes fade-in-top {
+	0% {
+	  -webkit-transform: translateY(-50px);
+			  transform: translateY(-50px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateY(0);
+			  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
