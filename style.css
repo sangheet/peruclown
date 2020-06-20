@@ -4753,3 +4753,12 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	}
   }
   
+  .slogan {
+	position: relative;
+    float: left;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: aliceblue;
+  }
