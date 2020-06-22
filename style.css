@@ -181,7 +181,7 @@ ul#friends-activity-profiles li.friends-activity-profiles-more a:hover,
 .btn-green-pro:hover {
 	color:#ffffff;
 	border-color:#9d9d9d;
-	background:#9d9d9d;
+	background:#009bb4;
 }
 
 /* Green Mouse Selection Color */
@@ -1446,8 +1446,9 @@ span.user-notification-count {
 .progression-studios-slider-dashboard-caption-width {
 	max-width:480px;
 	margin-left:20px;
-	position:relative;
+	position:fixed;
 	z-index:10;
+	top: 45vh;
 }
 
 .flexslider.progression-studios-dashboard-slider h6 {
@@ -4791,3 +4792,18 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 .obj:nth-of-type(6) {
   margin-right: 25vw;
 }
+.glow {
+	
+	color: #fff;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cea1b7, 0 0 40px #f0b3d1, 0 0 50px #f5c8de, 0 0 60px #ece0e6, 0 0 70px #ecd4e0;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #eedae4, 0 0 40px #e0d1d9, 0 0 50px #f5ebf0, 0 0 60px #eedfe6, 0 0 70px #e2d5dc, 0 0 80px #e6dfe2;
+	}
+  }
