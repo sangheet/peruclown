@@ -4837,6 +4837,15 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	height: 40vh;
 	overflow: hidden;
   }
+  .container2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-left: -60%;
+  }
   .container:hover .arrow-right,
   .container:hover .arrow-left {
 	opacity: 1;
@@ -5014,3 +5023,13 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
   }
   
   
+.middlescreen {
+	width: 50%;
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	float: right;
+	background-color: #000;
+	display: block;
+	background-image: url(images/zoom.png);
+}
