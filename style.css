@@ -518,19 +518,18 @@ nav#sidebar-nav {
     top: 0;
     left: 0;
     width: 100px;
-    z-index: 25;
-    background: #fc024e;
-    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
-    background: linear-gradient(to right, #fc024e, #fc024e);
+    z-index: 2500;
+    background: #ffffff;
+    
 }
 
-}
+
 nav#sidebar-nav.sticky-sidebar-js {
 	position: absolute;
 }
 
 #sidebar-bg:before {
-	background-color: #fc024e;
+	background-color: #ffffff;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
 	content: "";
 	display: block;
@@ -806,7 +805,7 @@ ul#vertical-sidebar-nav.sf-menu li {
 }
 ul#vertical-sidebar-nav.sf-menu li a:hover {
 	display:block;
-	color:rgb(255, 255, 255);
+	color:rgb(252, 2, 78);
 	padding:26px 0px;
 	transform: scale(1.1);
 	transition: all .5s;
@@ -817,7 +816,7 @@ ul#vertical-sidebar-nav.sf-menu li a:hover {
 
 ul#vertical-sidebar-nav.sf-menu li a {
 	display:block;
-	color:rgb(255, 255, 255);
+	color:rgb(252, 2, 78);
 	padding:26px 0px;
 	transition: all .5s;
 	font-size: 11px;
@@ -1767,7 +1766,7 @@ a.edit-profile-sidebar:hover {
 
 .content-sidebar-section {
 	padding:0px 35px;
-	margin-bottom:42px;
+	margin-bottom:22px;
 }
 
 h2.content-sidebar-sub-header {
@@ -4812,7 +4811,7 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 }
 .glow {
 	
-	color: #fff;
+	color: rgb(252, 2, 78)
 	-webkit-animation: glow 1s ease-in-out infinite alternate;
 	-moz-animation: glow 1s ease-in-out infinite alternate;
 	animation: glow 1s ease-in-out infinite alternate;
@@ -4997,6 +4996,7 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	font-weight: 300;
 	font-size: 1.4vw;
 	color: #fc024e;
+	margin-top: 25vh;
   }
   
   .properties {

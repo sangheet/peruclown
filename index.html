@@ -132,7 +132,7 @@
 					</a>
 				  </li>
 				<li class="normal-item-pro">
-					<a href="#" style="color: white!important;">
+					<a href="#">
 							<span class="icon-Movie glow"></span>
 					  <span class="glow" style="font-size: 14px;">hazte <br/>Premium</span> 
 					</a>
@@ -564,6 +564,18 @@
 			ScrollReveal().reveal('.dashboard-container');
 		</script>
 		<script src="js/draggable.js" defer></script><!-- Header Navigation JS Plugin -->
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function () {
+				var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos <= 50) {
+					document.getElementById("videohead-pro").style.top = "0";
+				} else {
+					document.getElementById("videohead-pro").style.top = "-120px";
+				}
+				prevScrollpos = currentScrollPos;
+			}
+		</script>
 		
 	</body>
 
