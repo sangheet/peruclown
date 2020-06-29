@@ -65,21 +65,31 @@ function init(){
         $(this).css("width", videoWidth * scaling);
         $(this).css("height", videoHeight * scaling);
         $(this).css("top", -(videoHeightDiff / 2));
+        
         if($(".slide").index($(this)) == 0 || ($(".slide").index($(this))) % 4 == 0){
           // do nothing
+          
         }
         else if(($(".slide").index($(this)) + 1) % 4 == 0 && $(".slide").index($(this)) != 0){
             $(this).parent().css("margin-left", -(videoWidthDiff - controlsWidth));
         }
         else{
             $(this).parent().css("margin-left", - (videoWidthDiff / 2));
+            
         }
+
+
     }).mouseout(function() {
         $(this).css("width", videoWidth * 1);
         $(this).css("height", videoHeight * 1);
         $(this).css("top", 0);
         $(this).parent().css("margin-left", controlsWidth);
     });
+
+    $(".overlay-play").mouseover(function() {
+        $(this).css("display", "none");
+        
+        }
     
     // controls
     controls(frameWidth, scollWidth);

@@ -5033,3 +5033,9 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	display: block;
 	background-image: url(images/zoom.png);
 }
+.overlay-play {
+	background-image: url(images/play-button.png);
+	background-size: 15%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
