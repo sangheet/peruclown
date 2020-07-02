@@ -9,7 +9,7 @@ var scollWidth = 0;
     
 
 $(document).ready(function(){
-    //$('.slider-container .slide:nth-last-child(-n+4)').prependTo('.slider-container');
+    $('.slider-container .slide:nth-last-child(-n+4)').prependTo('.slider-container');
     init();
     
 });

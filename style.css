@@ -457,8 +457,7 @@ header#videohead-pro {
 	position:relative;
 	margin:0px;
 	padding:0px;
-	z-index:-10;
-	/*background: #383838;*/
+	/*z-index:-100;*/
 
 	
 }
@@ -3601,6 +3600,7 @@ body .flex-control-paging *  {
 header#videohead-pro #mobile-bars-icon-pro {
 	margin-right:0px;
 	padding:36px 25px;
+
 }
 
 ul#mobile-menu-pro [class^="icon-"], ul#mobile-menu-pro [class*=" icon-"] {
@@ -3638,11 +3638,13 @@ ul#mobile-menu-pro span.user-notification-count {
 	cursor:pointer;
 	margin-right:-15px;
 	display:none;	
+	z-index: 200000000000;
 }
 
 #mobile-bars-icon-pro  i.fa-bars {
 	min-width:18px;
 	text-align:center;
+	z-index: 2000000000000000;
 }
 .active-mobile-icon-pro #mobile-bars-icon-pro  i.fa-bars:before {
 	content: "\f00d"; 
@@ -3657,11 +3659,10 @@ header#masthead-pro #mobile-navigation-pro {
 	line-height:1;
 	position:relative;
 	z-index:20;
-	
+	width: 89%;
 	background:#ffffff;
 	border-bottom:1px solid rgba(0,0,0,  0.1);
 	box-shadow:0px 15px 20px rgba(0,0,0,  0.05);
-	
     font-weight: 600;
 	font-family:'Montserrat', sans-serif;
 	text-transform:uppercase;
@@ -4841,10 +4842,9 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	display: flex;
 	flex-direction: row;
 	flex-wrap: no-wrap;
-	justify-content: center;
-	align-items: center;
+	justify-content: left;
 	overflow: hidden;
-	margin-left: -60%;
+	margin-left: 250px;
   }
   .container:hover .arrow-right,
   .container:hover .arrow-left {
@@ -5039,3 +5039,55 @@ li.flex-active-slide.progression_studios_animate_right .progression-studios-slid
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
+
+.marginTop80 {
+	margin-top: -50px;
+}
+
+@media only screen and (max-width: 600px) {
+	.item {
+	  width: 100%;
+	  height: 30vh;
+	  margin-bottom: 20px;
+	  background-size: contain!important;
+	  background-repeat: no-repeat;
+	}
+	.container {
+		flex-direction: column;
+		display: block;
+		padding-left: 0;
+		height: auto;
+	}
+	.hideOnMobile {
+	  display: none;
+	}
+	.progression-studios-slider-mobile-background-cover {
+		display: none;
+	}
+	.progression-studios-slider-dashboard-image-background {
+		background-image: url(images/zoom2.png);
+	}
+	.showOnMobile {
+		display: block!important;
+	}
+	.flexslider.progression-studios-dashboard-slider {
+		margin-top: 0;
+	}
+	header#videohead-pro {
+		background-color: #dddddd;
+	}
+	.slogan {
+		display: none;
+	}
+	.marginTop80 {
+		margin-top: 0px;
+
+	}
+	.container2 {
+		margin-left: 60px;
+		margin-top: 50px;
+	}
+  }
+  .showOnMobile {
+	  display: none!important;
+  }
